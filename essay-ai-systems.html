@@ -31,22 +31,204 @@
       </p>
     </header>
 
-    <article class="essay-body">
-      <!-- 在这里把你的正文按段落粘贴进来，每一段包在一个 <p> ... </p> 里面 -->
-      <p>[Paste your first paragraph here…]</p>
-      <p>[Paste your second paragraph here…]</p>
-      <p>[If you have images, see注释：使用 &lt;figure&gt; &lt;img&gt; &lt;figcaption&gt; 包裹]</p>
+    <!-- 顶部插图占位符：整篇文章的主题配图 -->
+    <!--
+    <figure class="essay-figure essay-figure-cover">
+      <img src="assets/img/essays/ai-knowledge-ecosystem-cover.jpg" alt="Abstract visualization of AI infrastructures and knowledge flows" />
+      <figcaption>Cover image: Visualising the entanglement of AI infrastructures, invisible labour, and knowledge systems.</figcaption>
+    </figure>
+    -->
 
-      <!-- 示例：插图（以后你把图片上传到 assets/img/essays/，改成真实路径） -->
+    <!-- 可选：文章内部导航（如果你不想要可以整段删掉） -->
+    <!--
+    <nav class="essay-toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#intro">Confronting the materiality of AI</a></li>
+        <li><a href="#invisible-labour">Invisible labour in AI systems</a></li>
+        <li><a href="#bias-data-dignity">Bias, data dignity, and algorithmic harms</a></li>
+        <li><a href="#swartz">Aaron Swartz and knowledge infrastructures</a></li>
+        <li><a href="#parallels">Parallels between AI and academic publishing</a></li>
+        <li><a href="#dh-practice">Digital humanities and responsible practice</a></li>
+        <li><a href="#conclusion">Conclusion: towards a more equitable knowledge landscape</a></li>
+      </ol>
+    </nav>
+    -->
+
+    <article class="essay-body">
+
+      <h2 id="intro">Confronting the materiality of AI</h2>
+      <p>
+        Advances in artificial intelligence are often narrated through metaphors of weightlessness and abstraction:
+        “the cloud,” “smart assistants,” “machine learning models,” and “automation.” Yet, as
+        <em>Anatomy of an AI System</em> reveals, this sleek imagery conceals a dense and sprawling terrain of
+        material infrastructures, human labour, ecological extraction, and economic dependencies
+        (Crawford &amp; Joler, 2018).
+      </p>
+      <p>
+        My initial response to the reading was an unexpected jolt of moral discomfort, not because the concepts were
+        unfamiliar, but because the piece hit me while I was using my AI smart device to play background music for study.
+        It forced a confrontation with the actual physical scale of what contemporary AI systems require. A simple voice
+        command such as “Alexa, turn on the lights” is never simple. Building on Crawford and Joler’s anatomy of the Echo,
+        we might also extend this chain to include not only mining operations, factories, logistics, and warehouses, but
+        contemporary regimes of data annotation, content moderation, and energy-intensive data centres, all coordinated
+        through layers of algorithmic engineering. What feels like a clean interface is, in reality, a carefully designed
+        surface that hides the messy infrastructure behind it.
+      </p>
+
+      <!-- 插图占位符：AI 供应链示意图 -->
       <!--
       <figure class="essay-figure">
-        <img src="assets/img/essays/ai-supply-chain-diagram.jpg" alt="Diagram of AI supply chain" />
-        <figcaption>Figure 1. A schematic view of AI supply chains and labour layers.</figcaption>
+        <img src="assets/img/essays/ai-supply-chain-diagram.jpg" alt="Diagram of AI supply chains from extraction to interface" />
+        <figcaption>Figure 1. A schematic view of AI supply chains, from mineral extraction to user-facing interfaces.</figcaption>
       </figure>
       -->
+
+      <h2 id="invisible-labour">Invisible labour in AI systems</h2>
+      <p>
+        This invisibility is not incidental but structural. It is integral to how technological systems maintain
+        legitimacy and commercial appeal. Users are invited to experience only the polished front stage of convenience,
+        while the backstage of extraction and labour remains deliberately out of sight. This hidden chain begins with the
+        extractive work at the very beginning: the mining of cobalt, lithium, and rare-earth alloys, materials that enter
+        the global supply stream at immense human and ecological cost. Next in line are the manufacturing processes,
+        where assembly-line labour is governed by strict temporal discipline and often by precarious forms of employment.
+      </p>
+      <p>
+        But the layer that feels the most invisible and unsettling is the third: the dispersed workforce of data labourers.
+        These workers annotate images, moderate content, clean datasets, and perform the cognitive piecework on which
+        machine-learning systems rely. Much of what is marketed as automation, in other words, still rests on low-paid
+        human cognition—a kind of piece-rate cognitive labour.
+      </p>
+
+      <!-- 插图占位符：数据标注与内容审核工作场景 -->
+      <!--
+      <figure class="essay-figure">
+        <img src="assets/img/essays/data-labourers.jpg" alt="People working on data annotation and content moderation" />
+        <figcaption>Figure 2. The often-unseen human labour of annotation, moderation, and data cleaning.</figcaption>
+      </figure>
+      -->
+
+      <h2 id="bias-data-dignity">Bias, data dignity, and algorithmic harms</h2>
+      <p>
+        Finally, there is the participatory labour of ordinary users whose interactions are continuously harvested as data.
+        These behavioural traces—clicks, queries, pause times, gestures, and metadata—are used to refine AI systems and
+        generate profit. Drawing on Jaron Lanier’s idea of “data dignity,” we might say that contemporary AI systems are
+        built from the contributions of countless people whose texts, images, and interactions become the raw material for
+        large models, even though they are rarely recognised or compensated as contributors (Lanier, 2023). Safiya Noble’s
+        work on search engines is deeply disturbing; it reveals how data encodes some of our ugliest biases, such as the way
+        “black girls” once reliably surfaced pornography rather than ordinary girls’ lives (Noble, 2014). This is not a mere
+        technical glitch; it is an algorithmic logic of visibility and erasure that determines who is seen and who is ignored
+        in the digital space. What appears as an autonomous “intelligent” system is, in fact, a massive social collaboration
+        whose human origins and biases have been obscured.
+      </p>
+      <p>
+        What shocked me most in the reading is a striking imbalance in transparency embedded in AI systems. The inputs—data
+        provenance, energy usage, annotation labour, production chains—are thoroughly obscured, while the outputs, by
+        contrast, exert enormous public influence. The lack of transparency and accountability in large language models can
+        create serious harms when they are used in downstream decision-making. Numerous scholars have shown how such systems
+        are implicated in domains such as credit scoring, hiring, policing, and healthcare, where unexamined algorithmic
+        outputs can reproduce structural inequalities (Bender et al., 2021; Noble, 2014). This is not merely a technological
+        imbalance. It is a political arrangement. When technologies designed by private entities shape public life without
+        accountability, the boundaries between corporate interests and social governance blur in troubling ways.
+      </p>
+
+      <!-- 引用高亮块：可选 -->
+      <!--
+      <blockquote class="essay-quote">
+        <p>“What appears as an autonomous ‘intelligent’ system is, in fact, a massive social collaboration whose human
+        origins and biases have been obscured.”</p>
+      </blockquote>
+      -->
+
+      <h2 id="swartz">Aaron Swartz and knowledge infrastructures</h2>
+      <p>
+        Reflecting on these concerns naturally led me back to <em>The Internet’s Own Boy</em>. Re-watching the documentary,
+        I finally understood the relationship between Aaron Swartz’s story and AI infrastructure. He was a kind of “system
+        diagnostician” exposing the paywall of the academic publishing “knowledge infrastructure,” rather than merely a
+        romantic hacker. His fight for open access was not only a moral stance but a diagnosis of structural inequality
+        embedded in the systems that mediate knowledge. Academic publishing, like AI, operates through asymmetry.
+        Researchers, often supported by public funding, produce knowledge, yet access to that knowledge is controlled by
+        a small number of commercial gatekeepers who monetise it. Paywalls convert scientific research into commodities,
+        excluding those without institutional affiliation or financial resources.
+      </p>
+      <p>
+        Swartz believed that publicly funded research should be available to the public. His downloading of JSTOR
+        articles—framed by prosecutors as criminal theft—was an attempt to expose the enclosure of knowledge. He imagined
+        a world where the barriers to learning were not determined by university affiliation or socioeconomic class
+        (Lessig, 2001). In this sense, Swartz confronted the same structural forces that underpin AI systems today. This
+        consolidation of power within private infrastructures that control access, visibility, and participation creates
+        a highly asymmetrical flow of information and value.
+      </p>
+
+      <!-- 插图占位符：Aaron Swartz / 开放获取 -->
+      <!--
+      <figure class="essay-figure">
+        <img src="assets/img/essays/aaron-swartz-open-access.jpg" alt="Portrait of Aaron Swartz or imagery about open access" />
+        <figcaption>Figure 3. Aaron Swartz’s struggle for open access as a critique of knowledge enclosures.</figcaption>
+      </figure>
+      -->
+
+      <h2 id="parallels">Parallels between AI and academic publishing</h2>
+      <p>
+        The parallels between AI supply chains and academic publishing at first appear unlikely. However, when examined more
+        closely, they reveal themselves as two components of a broader knowledge ecosystem. AI determines what data becomes
+        computationally meaningful, while publishing systems determine what information becomes institutionally legitimate
+        (Noble, 2014). Both systems rely on labour that rarely receives acknowledgement, whether from miners and factory
+        workers or from annotators, authors, reviewers, and editors. And they do not just depend on this labour; they
+        convert the contributions of the many into profit for the few. They also hide the very processes through which
+        decisions are made. Taken together, these dynamics shape how we interpret the world and organise knowledge.
+      </p>
+
+      <h2 id="dh-practice">Digital humanities and responsible practice</h2>
+      <p>
+        This is the landscape in which digital humanists must situate our work. My own position, as I reflect on the
+        coursework, is inherently ambivalent: I benefit from AI tools, digital archives, and academic platforms, yet I am
+        also implicated in the systems that reproduce inequities. I build digital artefacts, store data in repositories, and
+        rely on cloud infrastructures whose ecological and labour impacts are invisible to me. To ignore these conditions
+        would be to participate in a form of unexamined participation. The field of digital humanities, after all, is not
+        only about using tools but about interrogating the systems that produce them.
+      </p>
+      <p>
+        Scholars such as Joy Buolamwini have demonstrated how algorithmic systems embed and reproduce racial and gender
+        biases, calling for greater visibility, accountability, and justice in the design and deployment of AI technologies
+        (Buolamwini, 2016). Meanwhile, Jaron Lanier argues that contemporary digital economies extract immense value from
+        the everyday contributions of users, while offering little return to the individuals whose labour sustains these
+        systems (Lanier, 2023). Together, these critiques illuminate the ethical implications of digital practice: to build
+        responsibly, we must resist infrastructures that rely on obscured labour, unequal power relations, and the
+        exploitation of human contributions.
+      </p>
+      <p>
+        So what does responsible practice look like for me as a student? It does not require overthrowing global systems;
+        rather, it begins with conscious, intentional choices. For instance, I can use open-access materials when possible,
+        question how datasets were constructed, recognise the contributions of invisible labour, and cultivate transparency
+        in my own digital work. When building a digital repository, I should ask myself the following questions: where does
+        the power for this hosting service come from? Did I notice the “invisible absent”—that is, who is missing from the
+        dataset I am using? It also means acknowledging that technologies are never neutral, because they carry assumptions,
+        histories, and power relations.
+      </p>
+
+      <!-- 插图占位符：数字人文实践 / 课堂或作品截图 -->
+      <!--
+      <figure class="essay-figure">
+        <img src="assets/img/essays/dh-practice.jpg" alt="Screenshot of a digital humanities project interface" />
+        <figcaption>Figure 4. Situating digital humanities practice within broader infrastructures and ethics.</figcaption>
+      </figure>
+      -->
+
+      <h2 id="conclusion">Conclusion: towards a more equitable knowledge landscape</h2>
+      <p>
+        From AI supply chains to academic publishing, we encounter a tightly interconnected landscape of knowledge
+        production, which offers extraordinary possibilities while reproducing deep inequalities. The task of digital
+        humanists is not only to create but to critique; not only to innovate but to imagine alternatives. Aaron Swartz may
+        not have lived to see the transformations he hoped for, but his legacy endures as a reminder that knowledge can and
+        should be a public good. Through my own small contributions to openness, reflexivity, and digital ethics, I aim to
+        contribute, in small ways, to a more equitable knowledge landscape.
+      </p>
+
     </article>
   </div>
 </main>
+
 
 <footer class="site-footer">
   <div class="container">
