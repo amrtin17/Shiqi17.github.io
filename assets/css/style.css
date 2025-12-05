@@ -298,20 +298,21 @@ a:hover {
 
 /* References list style */
 .reference-list {
-  list-style: none;         /* 去掉前面的小圆点 */
+  list-style: none;
   padding-left: 0;
   margin-top: 1.5rem;
 }
 
+/* 悬挂缩进：首行左对齐，之后所有行右缩进 */
 .reference-list li {
-  margin-bottom: 0.75rem;   /* 每条之间留一点空白 */
+  margin-bottom: 0.75rem;
   line-height: 1.5;
-  text-indent: -1.5rem;     /* 悬挂缩进：首行往左“探出”一点 */
-  padding-left: 1.5rem;     /* 其他行往右缩进，对齐作者名之后 */
-  max-width: 60rem;         /* 可选：限制一条引用的行宽，更好读 */
-  font-size: 0.95rem;       /* 可选：比正文稍微小一点 */
+  display: block;
+  padding-left: 2.5rem;   /* 整条引用右缩进一点 */
+  text-indent: -2.5rem;   /* 只有首行往左“探出去”同样的距离 */
+  max-width: 60rem;
+  font-size: 0.95rem;
 }
-
 
 /* 响应式：平板 & 手机 */
 @media (max-width: 900px) {
